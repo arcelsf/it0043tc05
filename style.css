@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(135deg,#ffb6c1,#ffd6e0,#fff0f5);
+
+    font-family:'Georgia',serif;
+
+}
+
+
+
+/* Paper */
+
+.container{
+
+    position:relative;
+    z-index:5;
+
+}
+
+
+.paper{
+
+    width:650px;
+
+    padding:50px;
+
+    background:#fffaf0;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.25);
+
+
+    animation:open 2s ease;
+
+}
+
+
+@keyframes open{
+
+from{
+
+transform:scale(.7);
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+opacity:1;
+
+}
+
+}
+
+
+
+h1{
+
+text-align:center;
+
+color:#c2185b;
+
+margin-bottom:25px;
+
+font-size:38px;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+color:#e91e63;
+
+margin-top:30px;
+
+}
+
+
+
+p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#4a2c2a;
+
+margin-bottom:20px;
+
+}
+
+
+
+.signature{
+
+text-align:right;
+
+margin-top:35px;
+
+font-size:22px;
+
+font-style:italic;
+
+color:#b03060;
+
+}
+
+
+
+.top-decor{
+
+text-align:center;
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+
+
+
+/* floating hearts */
+
+.heart{
+
+position:absolute;
+
+color:#ff4081;
+
+font-size:25px;
+
+animation:float 8s linear infinite;
+
+}
+
+
+
+.flower{
+
+position:absolute;
+
+font-size:30px;
+
+animation:float 10s linear infinite;
+
+}
+
+
+
+
+@keyframes float{
+
+
+0%{
+
+transform:
+translateY(100vh)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:
+translateY(-10vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+
+}
